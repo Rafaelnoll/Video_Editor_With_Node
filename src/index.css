@@ -8,9 +8,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: montserrat;
+  border: none;
 }
 
-#root {  
+#root {
   height: 100%;
 }
 
