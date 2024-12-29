@@ -1,0 +1,22 @@
+.container {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.spaceship-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+
+    span {
+        text-align: center;
+        color: var(--opacity-white-3);
+        font-size: 24px;
+    }
+}

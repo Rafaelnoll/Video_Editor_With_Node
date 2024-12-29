@@ -1,7 +1,43 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+@font-face {
+  font-family: montserrat;
+  src: url('../assets/fonts/Montserrat.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+#root {  
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --background: #111111;
+  --black: #000000;
+  --grey: #252525;
+  --white: #FFFFFF;
+  --red-dark: #E83757;
+  --red: #FF5372;
+  --purple-dark: #8F54F9;
+  --purple: #A06EFB;
+  --purple-light: #AC7DFF;
+  --yellow-dark: #EAD627;
+  --yellow: #FEEA38;
+  --yellow-light: #FFF38B;
+  --green-light: #1ED291;
+  --green: #03BF7C;
+  --green-dark: #03B072;
+  --opacity-black-1: rgba(0,0,0,0.1);
+  --opacity-black-2: rgba(0,0,0,0.3);
+  --opacity-black-3: rgba(0,0,0,0.6);
+  --opacity-white-1: rgba(255,255,255,0.1);
+  --opacity-white-2: rgba(255,255,255,0.3);
+  --opacity-white-3: rgba(255,255,255,0.6);
 }
