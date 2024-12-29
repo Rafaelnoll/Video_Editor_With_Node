@@ -9,7 +9,7 @@ export default function Projects(){
 
     const {
       projects,
-      createNewProject
+      goToCreateNewProjectPage
     } = useProjects();
 
     function renderProjectsGrid(){
@@ -22,7 +22,7 @@ export default function Projects(){
             </div>
 
             <div className='projects-grid'>
-              {projects.map(project => <Project {...project} />)}
+              {projects.map(project => <Project key={project.id} {...project} />)}
             </div>
           </>
         )
@@ -42,7 +42,7 @@ export default function Projects(){
 
             {renderProjectsGrid()}
 
-            <Button onClick={createNewProject}>
+            <Button onClick={goToCreateNewProjectPage}>
               <PlusIcon />
               Create project
             </Button>
