@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import { HTMLProps, ReactNode } from 'react';
 import './styles.css';
 
 type ButtomType = 'primary' | 'dark' | 'white';
 
-interface IProps {
+interface IProps extends HTMLProps<HTMLButtonElement>{
   children: ReactNode;
   type?: ButtomType;
 }
@@ -21,9 +21,9 @@ function getClassNameByType(type: ButtomType): string {
   }
 }
 
-export default function Button({ children, type }:IProps){
+export default function Button({ children, type, ...props }:IProps){
     return (
-        <button className={getClassNameByType(type)}>
+        <button {...props} className={getClassNameByType(type)}>
           {children}
         </button>
     )
