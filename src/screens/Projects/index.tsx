@@ -4,6 +4,7 @@ import SpaceshipImage from '../../../assets/images/spaceship.png';
 import './styles.css';
 import useProjects from './useProjects';
 import Project from '../../components/Project';
+import ContainerCenter from '../../components/ContainerCenter';
 
 export default function Projects(){
 
@@ -38,7 +39,7 @@ export default function Projects(){
     }
 
     return (
-        <div className='container'>
+        <ContainerCenter>
 
             {renderProjectsGrid()}
 
@@ -46,6 +47,6 @@ export default function Projects(){
               <PlusIcon />
               Create project
             </Button>
-        </div>
+        </ContainerCenter>
     )
 }

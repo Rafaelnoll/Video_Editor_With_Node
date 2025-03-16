@@ -1,17 +1,18 @@
 import { createRoot } from 'react-dom/client'
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Projects from './screens/Projects';
-import CreateProject from './screens/CreateProject';
+import UploadVideo from './screens/UploadVideo';
+import VideoProvider from './providers/VideoProvider';
 
 
 function App(){
   return (
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<Projects />} />
-        <Route path='/newProject' element={<CreateProject />} />
-      </Routes>
-    </HashRouter>
+    <VideoProvider>
+      <HashRouter>
+        <Routes>
+          <Route path='/' element={<UploadVideo />} />
+        </Routes>
+      </HashRouter>
+    </VideoProvider>
   );
 }
 
